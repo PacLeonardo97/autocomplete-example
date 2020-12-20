@@ -52,7 +52,6 @@ input {
 .option {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 500px;
   padding: 5px;
 }

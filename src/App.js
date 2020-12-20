@@ -46,6 +46,7 @@ const Auto = () => {
   return (
     <div ref={wrapperRef} className="flex-container flex-column pos-rel">
       <input
+       autoComplete="off"
         id="auto"
         onClick={() => setDisplay(!display)}
         placeholder="Type to search"
@@ -64,8 +65,8 @@ const Auto = () => {
                   key={i}
                   tabIndex="0"
                 >
-                  <span>{value.name}</span>
                   <img src={value.sprite} alt="pokemon" />
+                  <span>{value.name}</span>
                 </div>
               );
             })}
